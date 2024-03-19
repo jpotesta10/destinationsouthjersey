@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Adventure Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Local Adventure Finder</h1>
+    </header>
+    <main>
+        <section id="preferences">
+            <h2>Set Your Adventure Preferences</h2>
+            <form id="preferences-form">
+                <label for="activity-type">Select an activity type:</label>
+                <select id="activity-type" name="activity-type">
+                    <option value="any">Any</option>
+                    <option value="food">Food</option>
+                    <option value="outdoors">Outdoors</option>
+                    <option value="culture">Culture</option>
+                    <option value="entertainment">Entertainment</option>
+                </select>
+                <button type="button" onclick="generateAdventure()">Find Adventure</button>
+            </form>
+        </section>
+        <section id="adventure-prompt">
+            <h2>Your Adventure Awaits</h2>
+            <p id="adventure-text">Click "Find Adventure" to generate a prompt!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Local Adventure Finder</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
